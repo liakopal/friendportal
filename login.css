@@ -1,0 +1,83 @@
+
+/* media query for responsiveness */
+@media (max-width:600px) {
+    .input-group {
+        flex-direction:column;
+    }
+}
+body{
+    font-family: Arial, sanserif;
+    background-color: #8389de ;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    min-height: 10vh;
+    margin: 0;
+    padding: 1rem;
+
+}
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 23px;
+    font-size: 44pt;
+    color:black;
+    position: absolute;
+    left: 1.5rem; /* Or any other value to position it where you want */
+    top: 0.1rem; /* Adjust this as well to position the h1 */
+    padding: auto;
+    display:flex;
+    flex-direction:row;
+    align-items: auto;
+    
+}
+form {
+    margin-right: -1cm; /* Adjust this to move the form closer/further from the right edge */
+    padding-top: 5rem;
+    flex-direction: row;
+
+}
+
+.input-group {
+    display: inline-flexbox;
+    margin-bottom: 10pt; /* Space between input fields */
+    flex-direction:row;
+
+}
+
+.input-label, input[type="text"],
+input[type="password"], input[type="submit"] {
+    background-color: white;
+    border:solid 4pt black;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    align-items: auto;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    width: 40%;
+    flex-shrink: calc();
+    
+
+    
+}
+.input-group, input[type="text"], input[type="password"] {
+    width:3,5cm;
+    margin-left: 40px;
+    flex: auto;
+
+}
+
+input[type="submit"] {
+    font-family: Arial, sanserif;
+    margin-inline: 8rem;
+    margin-top: 10pt;
+    margin-trim: all;
+    width:25%;
+    flex: auto;
+} 
+
+
+
