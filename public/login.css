@@ -1,0 +1,82 @@
+
+/* This media query adjusts styles for screens that are 600 pixels wide or less, commonly used for mobile devices. It changes the direction of flex items within an .input-group to a column layout, which stacks the child elements vertically. */
+@media (max-width:600px) {
+    .input-group {
+        flex-direction:column;
+    }
+}
+/* The body styles set the font family, background color, and use flexbox to align the content. The min-height is set to 10vh, which is 10% of the viewport height. Padding is added around the content, and the default margin is reset to 0. */
+body{
+    font-family: Arial, sanserif;
+    background-color: #8389de ;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    min-height: 10vh;
+    margin: 0;
+    padding: 1rem;
+
+}
+/* The h1 styles apply a specific font, set the font characteristics like style, variant, weight, and size, and position the element absolutely on the page. */
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 23px;
+    font-size: 44pt;
+    color:black;
+    position: absolute;
+    left: 1.5rem; /* Or any other value to position it where you want */
+    top: 0.1rem; /* Adjust this as well to position the h1 */
+    padding: auto;
+    display:flex;
+    flex-direction:row;
+    align-items: auto;
+    
+}
+/* Form styles affect the positioning of the form element on the page, setting its right margin and top padding. */
+form {
+    margin-right: -1cm; /* Adjust this to move the form closer/further from the right edge */
+    padding-top: 5rem;
+    flex-direction: row;
+
+}
+/* The .input-group styles define the display type and margins for spacing between input fields. */
+.input-group {
+    margin-bottom: 10pt; /* Space between input fields */
+    flex-direction:row;
+
+}
+/* These styles apply to the labels and input elements within the form. They set the background color, border, margins, padding, font size, and width. flex-shrink is set to calc() which is not correct and should be given a value if needed. */
+.input-label, input[type="text"],
+input[type="password"], input[type="submit"] {
+    background-color: white;
+    border:solid 4pt black;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    align-items: auto;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    width: 40%;
+    flex-shrink: calc(); 
+}
+/* These styles are intended for input text and password fields, setting their width and left margin. The width value is invalid and should be corrected (3,5cm should be 3.5cm or converted to another unit). */
+.input-group, input[type="text"], input[type="password"] {
+    width:3,5cm;
+    margin-left: 40px;
+    flex: auto;
+
+}
+/* The submit button styles set the font family, margins, and width. The margin-trim property is used, which is experimental and may not work in all browsers. */
+input[type="submit"] {
+    font-family: Arial, sanserif;
+    margin-inline: 8rem;
+    margin-top: 10pt;
+    width:25%;
+    flex: auto;
+} 
+
+
+
