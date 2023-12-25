@@ -1,0 +1,14 @@
+/* common.css */
+body {
+    background-color: #8389de; /* Consistent background color */
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: solid 4pt black;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

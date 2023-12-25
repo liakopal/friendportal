@@ -12,8 +12,3 @@ document.addEventListener('DOMContentLoaded', function() {
       })
     //   .catch(error => console.error('Error fetching profile data:', error));
   });
-  
-//   document.getElementById('jasmine-name').addEventListener('click', function() {
-//     // Code to execute when Jasmine's name is clicked
-//     window.location.href = 'profile.html';
-// });

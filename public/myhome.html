@@ -4,52 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>User Profile Cards</title>
-        <link rel="stylesheet" href="myhome.css">
+        <link rel="stylesheet" href="/css/common.css"> <!-- Common styles across pages -->
+        <link rel="stylesheet" href="/css/myhome.css"> <!-- Specific styles for myhome page -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div id="profile-area">
-                <img src="Ismin.png" alt="Profile" class="profile-picture">
-                <span>My name</span>
+                <img src="/images/Ismin.png" alt="Profile" class="profile-picture">
+                <button id="profile-name-button">My name</button>
             </div>
             <button id="logout-button">Log out</button>
         </header>
             <section id="user-cards">
                 <div class="user-card">
-                    <img src="Ismin.png" alt="Ismim">
-                    <button>Ismim</button>
+                    <img src="/images/Ismin.png" alt="Ismim">
+                    <button id="Ismin-button" class="profile-button" data-profile="ismin">Ismim</button>
                 </div>
                 <div class="user-card">
-                    <img src="Ismin.png" alt="Bella">
-                    <button>Bella</button>
+                    <img src="/images/Ismin.png" alt="Bella">
+                    <button id="Bella-button" class="profile-button" data-profile="bella">Bella</button>
                 </div>
                 <div class="user-card">
-                    <img src="Ismin.png" alt="Rose">
-                    <button>Rose</button>
+                    <img src="/images/Ismin.png" alt="Rose">
+                    <button id="Rose-button" class="profile-button" data-profile="rose">Rose</button>
                 </div>
                 <div class="user-card">
-                    <img src="Ismin.png" alt="Jasmine">
-                    <button id="jasmine-button">Jasmine</button>
+                    <img src="/images/Ismin.png" alt="Jasmine">
+                    <button id="jasmine-button" class="profile-button" data-profile="jasmine">Jasmine</button>
                 </div>
             </section>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const jasmineButton = document.getElementById('jasmine-button');
 
-                jasmineButton.addEventListener('click', function() {
-                    // Redirect to Jasmine's profile page on click
-                    window.location.href = 'profile.html'; // Assuming 'profile.html' is the profile page for Jasmine
-                });
-
-                const logoutButton = document.getElementById('logout-button');
-                logoutButton.addEventListener('click', function() {
-                    // Redirect to login.html on click
-                    window.location.href = 'login.html';
-                });
-            });
-
-        </script>
-        
+        <script src="js/common.js"></script>
+        <script src="js/myhome.js"></script> 
     </body>
 </html>

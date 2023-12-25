@@ -1,14 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* This ensures padding does not affect the total width or height */
-}
-
-body, html {
-    height: 100%; /* Make sure the body fills the entire viewport height */
-    margin: 0; /* Reset any default margin */
-    font-family: Arial, sans-serif;
-    background-color: #8389de;
+    box-sizing: border-box; /* Ensures padding does not affect the total width or height */
 }
 
 header {
@@ -16,7 +9,6 @@ header {
     display: flex;
     justify-content: space-between; /* Aligns children to the edges */
     align-items: center; /* Aligns children vertically */
-    background-color: #8389de;
     padding: 0; /* Remove padding to ensure alignment to the edge */
     height: 120px;
 }
@@ -24,14 +16,13 @@ header {
 #profile-area {
     display: flex;
     align-items: flex-start;
-    padding-left: 10px; /* Or adjust as needed to position "My name" correctly */
+    padding-left: 10px; /* Adjust to position "My name" correctly */
 }
 
 .profile-picture {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: none; /* Remove border if not needed */
 }
 
 #profile-area span {
@@ -40,24 +31,25 @@ header {
     font-weight: bold;
     color: black;
     background-color: transparent;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px;
     border: 3px solid #000; /* Add border to "My name" */
     margin-left: 10px;
 }
-
-#logout-button {
-    position: absolute; /* Positioning relative to the header */
-    top: 15px; /* Adjust this value to move the button down */
-    right: 10px; /* Keep it aligned to the right with a 10px gap */
+header #logout-button {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: black;
     font-weight: bold;
     background-color: transparent;
     padding: 10px;
-    border: 3px solid #000;
+    border: 4pt solid #000;
+    position: absolute; /* Positioning relative to the header */
+    top: 15px; /* Adjust this value to move the button down */
+    right: 10px; /* Keep it aligned to the right with a 10px gap */
     cursor: pointer; /* Optional: change the mouse cursor on hover */
 }
+
+
 #user-cards {
     display: flex;
     justify-content: space-around;
@@ -76,24 +68,18 @@ header {
     max-width: 250px; /* Slightly larger max width */
     box-sizing: border-box;
 }
+
 .user-card img {
-    width: 170px; /* You can adjust this to make the image bigger */
-    height: 250px; /* Make sure width and height are the same for a square */
+    width: 170px; /* Adjust this to make the image bigger */
+    height: 250px; /* Ensure width and height are the same for a square */
     object-fit: cover;
-    /* ...other styles... */
 }
 
+/* Apply specific styles to buttons in user cards */
 .user-card button {
-    font-family: 'Roboto', sans-serif; /* Your chosen font */
-    font-size: 18px; /* Start with this and adjust as necessary */
-    font-size: 18px; /* Larger font size */
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
-    color: #000;
-    border: 3px solid #000;
-    padding: 10px;
-    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     text-align: center;
+    width: 80%;
     margin-top: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
 }
